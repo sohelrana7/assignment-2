@@ -179,7 +179,77 @@ i {
   height: 310px;
   border-radius: 18px;
 }
+/* Training section style  */
+.training-section {
+  margin-top: 80px;
+}
+.training-title {
+  font-size: 40px;
+  font-weight: 900;
+}
+.gallery {
+  margin-top: 30px;
+}
+img {
+  width: 100%;
+}
+.first-row {
+  height: 250px;
+  display: grid;
+  grid-template-columns: 400px auto 400px;
+  margin-bottom: -19px;
+}
+.second-row {
+  height: 250px;
+  display: grid;
+  grid-template-columns: auto 400px 600px;
+}
+.first-row > div img {
+  height: 230px;
+}
+.second-row > div img {
+  height: 230px;
+}
 
+/* Team section  */
+.team-section {
+  margin-top: 80px;
+}
+.team-title {
+  font-size: 40px;
+  text-align: center;
+}
+.team-description {
+  text-align: center;
+}
+.team-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.team-card img {
+  height: 270px;
+  border-radius: 20px;
+}
+
+.footer {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+.first-col h2 {
+  font-size: 25px;
+}
+.second-col,
+.third-col p {
+  font-size: 20px;
+}
+.footer-copyright {
+  text-align: center;
+  margin-top: 50px;
+}
 /* Responsive design */
 @media screen and (max-width: 576px) {
   .nav-options {
@@ -229,5 +299,24 @@ i {
   }
   .running-content {
     width: 100%;
+  }
+  .first-row {
+    display: grid;
+    grid-template-columns: 170px 200px 0px;
+  }
+  .second-row {
+    display: grid;
+    grid-template-columns: 200px 170px 0px;
+  }
+  .team-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-copyright {
+    text-align: start;
   }
 }
