@@ -154,10 +154,32 @@ i {
   font-size: 20px;
   text-align: center;
   line-height: 0;
+  margin-top: 30px;
 }
 .card-description {
   text-align: center;
 }
+
+.running-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.running-content {
+  width: 600px;
+}
+.running-title {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.running-img img {
+  width: 360px;
+  height: 310px;
+  border-radius: 18px;
+}
+
 /* Responsive design */
 @media screen and (max-width: 576px) {
   .nav-options {
@@ -200,5 +222,12 @@ i {
   }
   .card {
     width: 90%;
+  }
+  .running-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .running-content {
+    width: 100%;
   }
 }
