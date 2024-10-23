@@ -4,8 +4,8 @@ body {
   font-family: "Inter Tight", sans-serif;
   background-color: black;
   color: white;
-
-  margin: 0;
+  width: 80%;
+  margin: 5rem auto;
 }
 
 /* navbar */
@@ -15,11 +15,6 @@ body {
   font-style: italic;
   color: #e6533c;
   cursor: pointer;
-}
-
-.container {
-  width: 85%;
-  margin: 5rem auto;
 }
 
 .navbar {
@@ -49,6 +44,81 @@ i {
   color: white;
 }
 
+/* Banner section */
+.banner-section {
+  display: flex;
+  gap: 500px;
+  align-items: center;
+  position: relative;
+}
+.banner-title {
+  font-size: 70px;
+  font-weight: 900;
+}
+.title-design {
+  font-family: Miama;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.btn {
+  border: none;
+  padding: 16px 60px;
+  border-radius: 40px;
+  margin-right: 8px;
+}
+.btn-active {
+  background-color: #e6533c;
+  font-size: 20px;
+  color: white;
+}
+.btn-normal {
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+}
+.workout-video {
+  width: 170px;
+  height: 90px;
+  line-height: 0;
+  background-color: #383737;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  padding: 0 20px;
+  position: absolute;
+  right: 50px;
+  top: 130px;
+}
+.workout-video h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.workout-video p {
+  color: #ffffffa6;
+}
+
+.video-tutorial {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 170px;
+  height: 70px;
+  line-height: 0;
+  background-color: #3030308a;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  top: -150px;
+}
+.video-tutorial .circle {
+  height: 25px;
+  width: 25px;
+  background-color: #e6533c;
+
+  border-radius: 50%;
+}
 /* Responsive design */
 @media screen and (max-width: 576px) {
   .nav-options {
@@ -56,5 +126,34 @@ i {
   }
   .bars {
     display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  body {
+    margin: 1rem auto;
+  }
+
+  .banner-section {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .banner-title {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+  .workout-video {
+    width: 170px;
+    height: 90px;
+    line-height: 0;
+    background-color: #383737;
+    border: 1px solid #ffffff1a;
+    border-radius: 10px;
+    padding: 0 20px;
+    position: absolute;
+    right: 0px;
+    top: 700px;
   }
 }
