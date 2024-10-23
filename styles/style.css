@@ -302,11 +302,11 @@ img {
   }
   .first-row {
     display: grid;
-    grid-template-columns: 170px 200px 0px;
+    grid-template-columns: 150px 200px 0px;
   }
   .second-row {
     display: grid;
-    grid-template-columns: 200px 170px 0px;
+    grid-template-columns: 200px 150px 0px;
   }
   .team-card {
     display: grid;
