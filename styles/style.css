@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  background-color: black;
+  color: white;
+
+  margin: 0;
+}
+
+/* navbar */
+.logo h1 {
+  font-size: 36px;
+  font-weight: 800;
+  font-style: italic;
+  color: #e6533c;
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  margin: 5rem auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active {
+  padding: 8px 16px;
+  background-color: #e6533c;
+  border-radius: 32px;
+}
+
+.bars {
+  display: none;
+}
+i {
+  color: white;
+}
+
+/* Responsive design */
+@media screen and (max-width: 576px) {
+  .nav-options {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+}
